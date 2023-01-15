@@ -44,14 +44,10 @@ class Planet {
       rotate(this.angle, p);
     }
     stroke(255);
-    //line(0, 0, 0, this.v.x, this.v.y, this.v.z);
-    //line(0, 0, 0, p.x, p.y, p.z);
-
     translate(this.v.x, this.v.y, this.v.z);
     noStroke();
     fill(255);
     sphere(this.radius);
-    //ellipse(0, 0, this.radius * 2, this.radius * 2);
     if (this.planets != null) {
       for (let i = 0; i < this.planets.length; i++) {
         this.planets[i].show();
